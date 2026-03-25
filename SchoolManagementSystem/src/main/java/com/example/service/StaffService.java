@@ -54,15 +54,14 @@ public class StaffService {
     }
 
     /* =========================
-       GET ALL STAFF
+       GET ALL STAFF (SORTED) ⭐
        ========================= */
     public List<Staff> getAllStaff() {
-        return staffRepository.findAll();
+        return staffRepository.findAllSorted();   // ⭐ main change
     }
 
     /* =========================
        GET STAFF BY ID
-       (Option-2 style: return null)
        ========================= */
     public Staff getStaffById(Long id) {
         return staffRepository.findById(id).orElse(null);

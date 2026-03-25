@@ -8,7 +8,7 @@ import org.hibernate.id.IdentifierGenerator;
 
 public class StudentIdGenerator implements IdentifierGenerator {
 
-    private static final long START_ID = 12501101L;
+    private static final long START_ID = 12601101L;
 
     @Override
     public Serializable generate(SharedSessionContractImplementor session, Object object)
